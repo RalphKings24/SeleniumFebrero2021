@@ -13,7 +13,6 @@ public class SeleniumTest {
 		
 		driver.get("https://acatitlan.edu.mx");
 
-
 	}
 
 }
