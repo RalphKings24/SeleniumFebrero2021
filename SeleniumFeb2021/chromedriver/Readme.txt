@@ -1,1 +1,1 @@
-Ejemplo de Chrome
+Ejemplo de Chrome, es importante crear este archivo de "Readme.txt"
