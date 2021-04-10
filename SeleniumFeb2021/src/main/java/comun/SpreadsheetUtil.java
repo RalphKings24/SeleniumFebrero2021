@@ -17,7 +17,7 @@ public class SpreadsheetUtil {
 	    
 	    
 		/**
-		 * @author Sergio
+		 * @author Rafa
 		 * @Date 09-04-2021
 		 * @Description inicialicia el arcivo 
 		 * @param String
@@ -28,7 +28,7 @@ public class SpreadsheetUtil {
 	    }
 	    
 		/**
-		 * @author Sergio
+		 * @author Rafa
 		 * @Date 09-04-2021
 		 * @Description cambia de sheet por nombre 
 		 * @param String
@@ -45,7 +45,7 @@ public class SpreadsheetUtil {
 	    }
 	    
 		/**
-		 * @author Sergio
+		 * @author Rafa
 		 * @Date 09-04-2021
 		 * @Description toma el valor de una columna por nombre y el row por numero 
 		 * @param String, Int
@@ -56,7 +56,7 @@ public class SpreadsheetUtil {
 	    }
 
 		/**
-		 * @author Sergio
+		 * @author Rafa
 		 * @Date 09-04-2021
 		 * @Description toma todas las columnas y revisa que exista 
 		 * @param String, Int
