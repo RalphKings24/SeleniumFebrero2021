@@ -26,9 +26,10 @@ public class Base {
 	static LeerProperties prop = new LeerProperties();
 	static WebDriver driver;
 	static String path = System.getProperty("user.dir");
+	public static InitPages page;
 	
 	/**
-	 * @author Sergio
+	 * @author Rafa
 	 * @Date 27-03-2021
 	 * @Description Este metodo Inicializa el web driver con lo que tenemos en el data.properties 
 	 * @param N/A
@@ -69,7 +70,9 @@ public class Base {
 			default:
 				System.out.println("El driver [ " + browser + " ] no esta configurado para funcionar en este proyecto");
 			}// end switch
-
+			
+			page = new InitPages(driver);
+			
 			driver.manage().timeouts().implicitlyWait(20, TimeUnit.MILLISECONDS);
 			Reporter.log("El web Driver fue inicializado [ " + browser + " ]", true);
 		} catch (Exception e) {
@@ -81,7 +84,7 @@ public class Base {
 	}// end startWebDriver
 	
 	/**
-	 * @author Sergio
+	 * @author Rafa
 	 * @Date 27-03-2021
 	 * @Description Este metodo genera un nombre random 
 	 * @param N/A
@@ -104,7 +107,7 @@ public class Base {
 	
 	
 	/**
-	 * @author Sergio
+	 * @author Rafa
 	 * @Date 27-03-2021
 	 * @Description Este metodo genera un correo electronico unico 
 	 * @param N/A
@@ -158,7 +161,7 @@ public class Base {
 	}
 	
 	/**
-	 * @author Sergio
+	 * @author Rafa
 	 * @Date 27-03-2021
 	 * @Description Este metodo genera un numero random del tamaño que recibe por parametro 
 	 * @param int
@@ -175,7 +178,7 @@ public class Base {
 	}//end 
 	
 	/**
-	 * @author Sergio
+	 * @author Rafa
 	 * @Date 27-03-2021
 	 * @Description Este metodo ingresa un texto en un WebElement
 	 * @param WebElement
@@ -195,7 +198,7 @@ public class Base {
 	}// ingresarTexto
 	
 	/**
-	 * @author Sergio
+	 * @author Rafa
 	 * @Date 27-03-2021
 	 * @Description Este metodo da click en un WebElement
 	 * @param WebElement
@@ -212,7 +215,7 @@ public class Base {
 	}// end click
 
 	/**
-	 * @author Sergio
+	 * @author Rafa
 	 * @Date 27-03-2021
 	 * @Description verifica que un WebElement exista
 	 * @param WebElement
